@@ -9,12 +9,6 @@ The application allows users to add, view, filter, and manage income and expense
 
 🔗 Deployed Application: https://expense-tracker-eshiv.vercel.app/
 
-📹 Demo Video (30–60 sec):
-- Adding income and expense entries
-- Filters in action
-- Summary section updating in real time
-- Data persistence after page refresh
-
 ---
 
 ## Features
