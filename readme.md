@@ -61,8 +61,7 @@ The application allows users to add, view, filter, and manage income and expense
 - ChatGPT
 
 AI tools were used as **development assistants** to:
-- Generate initial boilerplate
-- Explore alternative implementations
+- Adding responsiveness and minor UI changes 
 - Speed up debugging and refactoring under a tight deadline
 
 ---
@@ -70,7 +69,7 @@ AI tools were used as **development assistants** to:
 ## Challenges Faced & How I Resolved Them
 
 ### 1. Handling Add vs Edit Using the Same Form
-Managing add and edit functionality with a single form initially caused state conflicts.
+Managing add and edit functionality with a single form initially caused state conflicts.Took a while to debug the exact problem :)
 
 **Resolution:**  
 Introduced an `editingId` state variable to track whether the form is in add or edit mode.  
@@ -87,7 +86,7 @@ Standardized all dates to ISO format (`YYYY-MM-DD`), ensuring compatibility with
 ---
 
 ### 3. Data Loss on Page Refresh
-Earlier versions lost data on reload.
+Earlier versions lost data on reload. (Was able to do this in 2nd try only this time!!!😊)
 
 **Resolution:**  
 Moved application state persistence to localStorage and ensured data is loaded on `DOMContentLoaded` before rendering the UI.
@@ -112,11 +111,11 @@ Adopted a state-driven approach where the UI is always re-rendered from the cent
 
 ## Note on AI Usage
 
-AI tools such as Claude and ChatGPT were used as productivity aids during development under a strict deadline.  
-They assisted with:
-- Initial code structure
+AI tools such as Claude and ChatGPT were used as productivity aids during development under deadline.  
+They assisted me with:
 - Syntax reference
-- Exploring implementation approaches
+- Typos like i had in the interview 😭
+- Exploring implementation approaches for blurring the background when i am adding a new expense/income.
 
 All code was reviewed, tested, modified, and integrated by me.  
 I focused on understanding the complete codebase, refining the UI/UX, and ensuring all assignment requirements were met.
@@ -127,8 +126,6 @@ I focused on understanding the complete codebase, refining the UI/UX, and ensuri
 
 - Managing application state without using frameworks
 - Structuring JavaScript code for maintainability
-- Handling UI state, filters, and persistence together
-- Using browser APIs effectively
 - Using AI tools responsibly as part of the development workflow
 
 
